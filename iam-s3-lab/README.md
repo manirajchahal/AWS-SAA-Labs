@@ -6,7 +6,7 @@ This lab demonstrates AWS IAM access control by restricting and testing an IAM u
 
 ## 🔐 Objective
 
-- Create a private S3 bucket with test data
+- Create a private S3 bucket with test data from IAM user admin-user
 - Create an IAM user with read-only access
 - Validate:
   - ✅ User can view files
@@ -36,13 +36,18 @@ This lab demonstrates AWS IAM access control by restricting and testing an IAM u
 
 ## 🧪 Test Results
 
-### ✅ View File (Success)
-User accessed the S3 bucket and viewed the uploaded object.
+### ✅ Admin User - Upload File (Success)
+User accessed the S3 bucket and uploaded the `readonlyview.txt`.
 
 ![Can View](screenshots/readonly-user-can-view.png)
 
-### ❌ Upload File (Blocked)
-User attempted to upload a file and was denied.
+### ✅ View File (Success)
+User accessed the S3 bucket and viewed the uploaded `readonlyview.txt`.
+
+![Can View](screenshots/readonly-user-can-view.png)
+
+### ❌ Read-Only User - Upload File (Blocked)
+User attempted to upload `readonlyupload.txt` and was denied.
 
 ![Denied Upload](screenshots/readonly-user-denied-upload.png)
 
