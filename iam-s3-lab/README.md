@@ -39,7 +39,7 @@ This lab demonstrates AWS IAM access control by restricting and testing an IAM u
 ### ✅ Admin User - Upload File (Success)
 User accessed the S3 bucket and uploaded the `readonlyview.txt`.
 
-![Can View](screenshots/readonly-user-can-view.png)
+![Can View](screenshots/admin-user_successful_upload.png)
 
 ### ✅ View File (Success)
 User accessed the S3 bucket and viewed the uploaded `readonlyview.txt`.
