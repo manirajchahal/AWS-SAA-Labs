@@ -71,14 +71,6 @@ User attempted to upload `readonlyupload.txt` and was denied.
 
 ---
 
-## 🧱 Future Additions (Optional)
-
-- Create a custom IAM policy to allow `PutObject` only in `/uploads/`
-- Use `aws s3 cp` to test programmatic access
-- Write a boto3 script to verify user permissions
-
----
-
 ## 🧑‍💻 Author
 
 **Maniraj Chahal**  
