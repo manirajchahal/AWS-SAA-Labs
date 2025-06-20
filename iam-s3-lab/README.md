@@ -58,7 +58,7 @@ User attempted to upload `readonlyupload.txt` and was denied.
 | File/Folder | Description |
 |-------------|-------------|
 | `screenshots/` | Visual proof of successful and failed actions |
-| `iam-policy/` | (Optional) Custom JSON IAM policy for specific access |
+| `iam-policy/` | Custom JSON IAM policy for specific folder upload only access |
 | `README.md` | This documentation |
 
 ---
