@@ -60,14 +60,13 @@ User attempted to upload `readonlyupload.txt` and was denied.
 | `screenshots/` | Visual proof of successful and failed actions |
 | `iam-policy/` | (Optional) Custom JSON IAM policy for specific access |
 | `README.md` | This documentation |
-| `notes.md` | Optional notes from lab execution |
 
 ---
 
 ## 💡 Takeaways
 
-- IAM policies are strictly enforced when properly scoped
-- AWS's managed `AmazonS3ReadOnlyAccess` policy is effective for read-only cases
+- IAM policies are strictly enforced when properly configured
+- AWS's managed `AmazonS3ReadOnlyAccess` policy is useful for read-only cases
 - It's best practice to test IAM roles and policies in isolated environments before production
 
 ---
@@ -83,5 +82,4 @@ User attempted to upload `readonlyupload.txt` and was denied.
 ## 🧑‍💻 Author
 
 **Maniraj Chahal**  
-Security Engineering Intern | AWS SAA Prep  
 [GitHub](https://github.com/manirajchahal) • [LinkedIn](https://www.linkedin.com/in/manirajchahal)
