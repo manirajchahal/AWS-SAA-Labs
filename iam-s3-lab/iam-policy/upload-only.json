@@ -1,10 +1,38 @@
 {
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Effect": "Allow",
-      "Action": "s3:PutObject",
-      "Resource": "arn:aws:s3:::maniraj-iam-test-bucket/upload/*"
-    }
-  ]
+    "Version": "2012-10-17",
+    "Statement": [
+        {
+            "Sid": "AllowListingAllBucketsNames",
+            "Effect": "Allow",
+            "Action": "s3:ListAllMyBuckets",
+            "Resource": "*"
+        },
+        {
+            "Sid": "UploadOnlyToUploadFolder",
+            "Effect": "Allow",
+            "Action": "s3:PutObject",
+            "Resource": "arn:aws:s3:::maniraj-iam-test-bucket/upload/*"
+        },
+        {
+            "Sid": "ListOnlyUploadFolder",
+            "Effect": "Allow",
+            "Action": "s3:ListBucket",
+            "Resource": "arn:aws:s3:::maniraj-iam-test-bucket",
+            "Condition": {
+                "StringLike": {
+                    "s3:prefix": [
+                        "",
+                        "upload/",
+                        "upload/*"
+                    ]
+                }
+            }
+        },
+        {
+            "Sid": "ReadOnlyUploadedFiles",
+            "Effect": "Allow",
+            "Action": "s3:GetObject",
+            "Resource": "arn:aws:s3:::maniraj-iam-test-bucket/upload/*"
+        }
+    ]
 }
