@@ -44,12 +44,12 @@ User accessed the S3 bucket and uploaded the `readonlyview.txt`.
 ### ✅ View File (Success)
 User accessed the S3 bucket and viewed the uploaded `readonlyview.txt`.
 
-![Can View](screenshots/readonly-user-can-view.png)
+![Can View](screenshots/readonly-user_successful_view.png)
 
 ### ❌ Read-Only User - Upload File (Blocked)
 User attempted to upload `readonlyupload.txt` and was denied.
 
-![Denied Upload](screenshots/readonly-user-denied-upload.png)
+![Denied Upload](screenshots/readonly-user_unsuccessful-upload.png)
 
 ---
 
