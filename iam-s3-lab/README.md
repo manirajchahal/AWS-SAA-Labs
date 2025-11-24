@@ -19,7 +19,7 @@ This lab project demonstrates real-world AWS IAM access control by simulating mu
 - **Bucket Settings:**
   - Block all public access: ✅ Enabled
 - **Folders:**
-  - `/` (root)
+  - `/root`
   - `/upload/` (created by admin-user for upload-only testing)
 
 ---
@@ -93,7 +93,6 @@ Allow a user to:
 | Upload file to root folder      | ❌ Denied  |
 | View contents outside `/upload/`| ❌ Denied  |
 
-### 🖼 Screenshots
 
 ### ✅ Upload User - View Bucket (Success)  
 User logged in as `upload-user` and successfully accessed the `maniraj-iam-test-bucket`.
@@ -155,10 +154,3 @@ User tried to list objects outside `/upload/` and received an access denied erro
 - ✅ Testing IAM scenarios in isolation is best practice before deployment
 
 ---
-
-## 🧑‍💻 Author
-
-**Maniraj Chahal**  
-[GitHub](https://github.com/manirajchahal) • [LinkedIn](https://linkedin.com/in/manirajchahal)
-
-
